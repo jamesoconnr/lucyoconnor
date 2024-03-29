@@ -80,7 +80,7 @@ img:not(.last-slide, .current-slide, .next-slide){
     color: rgb(39, 39, 39);
     width: max-content;
 }
-@media (max-width: 768px) or (orientation: portrait) {
+@media (max-width: 768px) or (orientation: portrait){
     .last-slide, .next-slide{
         left: 50%;
         transform: translateX(-50%);
@@ -93,6 +93,21 @@ img:not(.last-slide, .current-slide, .next-slide){
     }
     .arrow{
         display: none;
+    }
+}
+@media (orientation: landscape) and (max-height: 400px) {
+    .last-slide{
+        left: 25%;
+    }
+    .next-slide{
+        right: -37.5%;
+        left: auto;
+    }
+    .next-slide, .last-slide{
+        top: 25%;
+    }
+    .arrow{
+        display: block;
     }
 }
 @media (orientation: portrait) {
