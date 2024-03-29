@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="downarrow.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.514375"
+     inkscape:cx="-15.552855"
+     inkscape:cy="628.91859"
+     inkscape:window-width="1910"
+     inkscape:window-height="1000"
+     inkscape:window-x="5"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">arrow_left [#361]</title>
+  <desc
+     id="desc1">Created with Sketch.</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="rotate(-90,9.9978623,10.002012)">
+    <g
+       id="Dribbble-Light-Preview"
+       transform="translate(-100,-6599)"
+       fill="#808080">
+      <g
+         id="icons"
+         transform="translate(56,160)">
+        <path
+           d="m 52.87975,6458.7072 c 0.391,0.3904 1.024,0.3904 1.414,0 0.391,-0.3903 0.391,-1.0222 0,-1.4116 l -6.44,-6.4291 c -0.315,-0.3145 -0.092,-0.8516 0.353,-0.8516 h 14.793 c 0.552,0 1,-0.4562 1,-1.0073 v 0 c 0,-0.5511 -0.448,-0.9853 -1,-0.9853 h -14.793 c -0.445,0 -0.668,-0.5381 -0.353,-0.8526 l 6.471,-6.4611 c 0.391,-0.3903 0.391,-1.0223 0,-1.4126 v 0 c -0.39,-0.3893 -1.023,-0.3893 -1.414,0 l -8.325,8.312 c -0.781,0.7797 -0.781,2.0435 0,2.8232 0.203,0.2027 8.455,8.4408 8.294,8.28"
+           id="arrow_left-[#361]" />
+      </g>
+    </g>
+  </g>
+</svg>

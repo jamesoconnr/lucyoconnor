@@ -1,8 +1,12 @@
 :root{
-    --bg: rgb(250, 245, 204);
+    --bg: rgb(255 255 254); 
 }
 *{
     box-sizing: border-box;
+}
+::selection{
+    background-color: #b9b9b9;
+    color: black;
 }
 body{
     width: 100%;
@@ -16,17 +20,167 @@ h1{
 }
 .hero{
     height: 100vh;
-    background-image: url("https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://cdn.pixabay.com/photo/2022/02/12/21/37/woman-7009979_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    background-position: 50%;
+    border-bottom: 4px solid rgb(226, 226, 226);
 }
 .hero .header{
+    margin-top: auto;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 40svh;
+    gap: 1rem;
+    position: relative;
+    background-color: var(--bg);
+}
+.hero .header *{
+    margin: 0;
+}
+.hero .header h2{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1rem;
-    height: 20svh;
-    background-color: var(--bg);
+}
+.hero .header h1{
+    font-size: 6rem;
+}
+.header .contact{
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.contact a svg{
+    height: 2rem;
+    fill: rgb(32, 31, 31);
+    transition: transform 300ms, fill 300ms; 
+}
+.contact a:hover svg{
+    fill: rgb(77, 77, 77);
+    transform: scale(0.95); 
+}
+@keyframes moreHover {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.more{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    color: gray;
+    fill: #808080;
+    animation: moreHover 2s infinite;
+}
+.more:last-of-type{
+    left: auto;
+    right: 2rem;
+}
+.more img{
+    height: 1.5rem; 
+}
+.contents{
+    padding: 3rem;
+    display: flex;
+    height: 100svh;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.contents .item{
+    width: 25vw;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    padding: 1rem;
+    background: rgb(250, 250, 250);
+    transition: background 300ms;
+    align-items: center;
+}
+.contents .item:hover{
+    background: rgb(228, 228, 228);
+}
+.contents .item:hover .thumbnail{
+    background-size: 120%;
+}
+.contents h2{
+    font-size: 2.5rem;
+}
+.contents p{
+    font-size: 2rem;
+}
+.contents .thumbnail{
+    background-repeat: no-repeat;
+    transition: all 600ms;
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.item.bridal .thumbnail{
+    background-image: url('assets/bridal/thumb.jpg');
+}
+.item.skiing .thumbnail{
+    background-image: url('assets/skiing/thumb.jpg');
+}
+.item.when .thumbnail{
+    background-image: url('assets/when/thumb.jpg');
+}
+@media (orientation: portrait) {
+    .contents{
+        flex-direction: column;
+    }
+    .item{
+        display: flex;
+        width: 100%!important;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    .thumbnail{
+        width: 35vw!important;
+    }
+    .item h2{
+        font-size: 2.75rem!important;
+    }
+    
+}
+@media (max-width: 768px) or (max-height: 600px) {
+    .hero .header h2{
+        font-size: 1.25rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+    }
+    .hero .header h1{
+        font-size: 3rem;
+    }
+    .contents{
+        padding: 1rem;
+    }
+    .item{
+        background: rgb(240, 240, 240)!important;
+    }
+    .item h2{
+        font-size: 2.25rem;
+    }
+    .item .thumbnail{
+        width: 8rem;
+    }
+}
+@media (max-width: 768px){
 }
